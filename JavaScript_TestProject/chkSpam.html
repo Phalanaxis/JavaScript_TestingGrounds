@@ -1,0 +1,17 @@
+<!DOctype html>
+
+<body>
+    <script>
+        function checkSpam(str){
+            let lowerStr = str.toLowerCase();
+            return lowerStr.includes('viagra')  || lowerStr.includes('XXX');
+        }
+
+        alert(checkSpam('Это ViAgra'));
+        alert(checkSpam('XXX Viagra sex'));
+        alert(checkSpam('Бабушенко'));
+    </script>
+</body>
+
+
+</html>

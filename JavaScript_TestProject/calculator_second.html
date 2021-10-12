@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<script>
+    "use strict";
+
+    function Calculator() {
+        this.read = function(){
+                this.first = +prompt('первое число', 'число')  ;
+                this.second = +prompt('второе число',  'число');
+        };
+        this.sum = function(){
+            return this.first + this.second;
+        };
+        this.mul = function(){
+            return this.first * this.second;
+        };
+    }
+
+    let calculator = new Calculator();
+
+    calculator.read();
+    alert(calculator.sum());
+    alert(calculator.mul());
+</script>

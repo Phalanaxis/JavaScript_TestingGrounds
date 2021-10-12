@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<body>
+    <script>
+        function camelize(str){
+            let arr = str.split('-');
+            
+            for(let element of arr){
+                element = element.charAt(0).toUpperCase() + element.substr(1);
+            }
+
+            let Final_String = arr.join('');
+            return Final_String;
+        }
+
+        let str = 'sec-Sax-inter-bait-tel'
+
+        alert(camelize(str));
+
+    </script>
+</body>
+
+
+</html>

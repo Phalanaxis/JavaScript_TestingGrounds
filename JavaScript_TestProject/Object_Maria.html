@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<script>
+"use strict";
+
+let user = {
+    name : "Maria",
+    age : 16,
+    "likes cats" : true,
+};
+
+alert(user.name);
+alert(user.age);
+
+user.isAdmin = true;
+
+delete user.age;
+delete user["likes cats"];
+
+for(let key in user) {
+    alert(key);
+    alert(user[key]);
+}
+
+</script>

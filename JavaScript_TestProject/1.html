@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<script>
+    function Calculator() {
+        this.read = function(){
+            this.PromptOne = +prompt('введите первое свойство', 0);
+            this.PromptTwo = +prompt('введите второе свойство', 0);
+        };
+
+        this.sum = function(){
+            return this.PromptOne + this.PromptTwo;
+        };
+
+        this.mul = function(){
+            return this.PromptOne * this.PromptTwo;
+        };
+    }
+
+    let calculator = new Calculator();
+    calculator.read();
+
+    alert("Sum = " + calculator.sum());
+    alert("Mul = " + calculator.mul());
+
+</script>
+
+</html>

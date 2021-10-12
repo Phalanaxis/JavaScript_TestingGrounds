@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<script>
+    "use strict";
+
+    function isEmpty(user){
+        for(let key in user){
+            return false
+        }
+        return true;
+    }
+
+    let user = {};
+
+    alert(isEmpty(user));
+
+    user.Name = "Artem";
+
+    alert(isEmpty(user));
+</script>
